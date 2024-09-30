@@ -4,7 +4,7 @@ export default createMiddleware({
     // A list of all locales that are supported
     defaultLocale,
     locales,
-    localePrefix,
+    localePrefix: 'as-needed',
     pathnames
 });
 
