@@ -16,7 +16,7 @@ function NavBar() {
   const t = navigation[locale as keyof typeof navigation];
 
   function isHome() {
-    if (pathN === "/" + locale) {
+    if (pathN === "/") {
       return true;
     }
     return false;
@@ -34,19 +34,9 @@ function NavBar() {
         <div className={style.mainNavBar__logo}>
           <Link href="/">
             {isHome() ? (
-              <Image
-                src="/image/florencebarbellstudiologo.png"
-                width={300}
-                height={58}
-                alt="logo"
-              />
+              <Image src="/image/logo.svg" width={300} height={58} alt="logo" />
             ) : (
-              <Image
-                src="/image/florencebarbellstudiologoInverted.jpg"
-                width={300}
-                height={58}
-                alt="logo"
-              />
+              <Image src="/image/logo.svg" width={300} height={58} alt="logo" />
             )}
           </Link>
         </div>
