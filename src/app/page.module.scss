@@ -1,5 +1,10 @@
 .section1 p {
   font-size: 70px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .section2 {
@@ -113,6 +118,11 @@
 }
 .section7 {
   text-align: center;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   hr {
     border: 1px solid lightgray;
   }

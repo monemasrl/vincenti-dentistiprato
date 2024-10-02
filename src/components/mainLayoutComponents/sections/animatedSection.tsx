@@ -19,7 +19,7 @@ function AnimatedSection({
       style={{
         position: "relative",
         overflow: `${overflowHidden ? "hidden" : "initial"}`,
-        width: `${width ? width : "100%"}`,
+        maxWidth: `${width ? width : ""}`,
         margin: "0 auto",
       }}
       className={classname}

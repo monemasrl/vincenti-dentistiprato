@@ -40,24 +40,21 @@ function Parallax({
           y: parallax,
         }}
       >
-        <motion.div
-          className={style.parallaxContainer__parallax}
-          style={{
-            y: parallax,
-          }}
-        >
+        <div className={style.parallaxContainer__parallax__img}>
           <ExportedImage src={imageURL} fill alt={alt} />
-        </motion.div>
-        <motion.div className={style.parallaxContainer__parallax__testo}>
-          <div dangerouslySetInnerHTML={{ __html: text || "" }} />
-          <br />
+        </div>
+      </motion.div>
+      <motion.div className={style.parallaxContainer__parallax__testo}>
+        <div dangerouslySetInnerHTML={{ __html: text || "" }} />
+        <br />
+        {buttonText && (
           <a
             className={style.parallaxContainer__parallax__testo__button}
             href={buttonLink}
           >
             {buttonText}
           </a>
-        </motion.div>
+        )}
       </motion.div>
     </motion.div>
   );
