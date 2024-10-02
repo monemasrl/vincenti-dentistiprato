@@ -5,8 +5,9 @@ import { easeOut, motion, useTransform, useScroll } from "framer-motion";
 import { useState } from "react";
 import LoaderSite from "@/components/loaders/loader";
 import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
+
 import ImagePreload from "../loaders/imagePreLoad";
+import React from "react";
 /**
  * HERO VIDEO
  * Componente per la gestione del video in homepage con testo
@@ -27,7 +28,7 @@ function HeroVideo({
   data: any;
   typeOfData: "video" | "image";
 }) {
-  const isHome = usePathname() === "/" + useLocale();
+  const isHome = usePathname() === "/";
 
   const container = {
     hidden: { opacity: 0 },
@@ -93,7 +94,7 @@ function HeroVideo({
               <Image
                 className={style.hero__image}
                 src={"/image/mainImage.jpg"}
-                layout="fill"
+                fill
                 alt="Immagine Principale HomePage"
                 onLoadingComplete={() => setLoading(false)}
                 priority
@@ -103,7 +104,7 @@ function HeroVideo({
               <Image
                 className={style.hero__image}
                 src={"/image/mainImage.jpg"}
-                layout="fill"
+                fill
                 alt="Immagine Principale HomePage"
                 onLoadingComplete={() => setLoading(false)}
                 priority

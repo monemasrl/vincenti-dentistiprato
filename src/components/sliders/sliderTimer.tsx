@@ -104,7 +104,7 @@ function Slider({ data }: { data: Tdata[] }) {
                   <Image
                     src={item.image}
                     alt={item.titolo || "immagine slider"}
-                    layout="fill"
+                    fill
                     objectFit="cover"
                   />
                 </div>

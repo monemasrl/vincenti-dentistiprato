@@ -57,7 +57,7 @@ function TabBody({ tabData }: { tabData: Tdata | undefined }) {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, transition: { duration: 0.3 } }}
             >
-              <Image src={tabData.image} alt={tabData?.titolo} layout="fill" />
+              <Image src={tabData.image} alt={tabData?.titolo} fill />
             </motion.div>
           ) : (
             <div>no image</div>

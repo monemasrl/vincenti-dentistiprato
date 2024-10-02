@@ -43,7 +43,7 @@ export const ImagePreload = ({
           className={style.imagePreload}
           src={src || ""}
           alt={alt}
-          layout="fill"
+          fill
           style={{ visibility, objectFit: "cover", width: "100%" }}
           onError={() => setReveal(true)}
           onLoadingComplete={() => setReveal(true)}
@@ -69,7 +69,7 @@ export const ImagePreload = ({
           className={style.imagePreload}
           src={src || ""}
           alt={alt}
-          layout="fill"
+          fill
           onError={() => setReveal(true)}
           onLoadingComplete={() => setReveal(true)}
           priority={isLazy}

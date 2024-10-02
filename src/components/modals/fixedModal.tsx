@@ -62,11 +62,7 @@ function FixedModal({
               delay: 0.7,
             }}
           >
-            <Image
-              src={dataScheda.image}
-              alt={dataScheda.nome}
-              layout={"fill"}
-            />
+            <Image src={dataScheda.image} alt={dataScheda.nome} fill />
           </motion.div>
           <div className={style.fixedModal__content}>
             <div

@@ -1,26 +1,12 @@
 {
     "it": {
-        "titolo": "Ciao",
-        "sottotitolo": "Benvenuto nel mondo di Vue.js",
-        "paragrafo": "Questo è un paragrafo di prova",
-        "link": "Vai alla documentazione",
-        "linkURL": "https://vuejs.org/v2/guide/",
-        "list": [
-            "Elemento 1",
-            "Elemento 2",
-            "Elemento 3"
-        ]
+        "titolo": "Per prendersi cura di voi <br /> con cortesia e professionalità",
+        "link": "I nostri trattamenti",
+        "linkURL": "#"
     },
     "en": {
-        "titolo": "Hello",
-        "sottotitolo": "Welcome to the world of Vue.js",
-        "paragrafo": "This is a test paragraph",
-        "link": "Go to the documentation",
-        "linkURL": "https://vuejs.org/v2/guide/",
-        "list": [
-            "Item 1",
-            "Item 2",
-            "Item 3"
-        ]
+        "titolo": "Per prendersi cura di voi <br />con cortesia e professionalità",
+        "link": "I nostri trattamenti",
+        "linkURL": "#"
     }
 }

@@ -2,10 +2,10 @@
 import { useState, useEffect } from "react";
 import style from "./form.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import generic from "../../../public/data/generic.json";
 
 function SuccessMessage({ status }: { status: string | null }) {
-  const t = useTranslations("FormContatti");
+  const t = generic.FormContatti;
   return (
     <AnimatePresence>
       {status === "ok" && (
@@ -16,14 +16,14 @@ function SuccessMessage({ status }: { status: string | null }) {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div dangerouslySetInnerHTML={{ __html: t("success") }} />
+          <div dangerouslySetInnerHTML={{ __html: t.success }} />
         </motion.div>
       )}
     </AnimatePresence>
   );
 }
 function Form() {
-  const t = useTranslations("FormContatti");
+  const t = generic.FormContatti;
   const [nome, setNome] = useState<string>("");
   const [errorNome, setErrorNome] = useState<string>("");
   const [cognome, setCognome] = useState<string>("");
@@ -38,26 +38,26 @@ function Form() {
 
   useEffect(() => {
     if (nome.length < 3 && nome.length > 0) {
-      setErrorNome(t("err_nome"));
+      setErrorNome(t.err_nome);
     } else {
       setErrorNome("");
     }
     if (cognome.length < 3 && cognome.length > 0) {
-      setErrorCognome(t("err_cognome"));
+      setErrorCognome(t.err_cognome);
     } else {
       setErrorCognome("");
     }
 
     if (mail.length < 6 && mail.length > 0) {
-      setErrorMail(t("err_email"));
+      setErrorMail(t.err_email);
     } else if (mail.length > 0 && !mail.includes("@")) {
-      setErrorMail(t("err_email"));
+      setErrorMail(t.err_email);
     } else {
       setErrorMail("");
     }
 
     if (messaggio.length < 10 && messaggio.length > 0) {
-      setErrorMessaggio(t("err_messaggio"));
+      setErrorMessaggio(t.err_messaggio);
     } else {
       setErrorMessaggio("");
     }
@@ -114,7 +114,7 @@ function Form() {
       <input type="hidden" name="form-name" value="contatti" />
       <p>
         {" "}
-        <label htmlFor="nome">{t("nome")}</label> <br />
+        <label htmlFor="nome">{t.nome}</label> <br />
         <input
           onChange={(e) => {
             setNome(e.target.value);
@@ -127,7 +127,7 @@ function Form() {
         />
       </p>
       <p>
-        <label htmlFor="cognome">{t("cognome")}</label> <br />
+        <label htmlFor="cognome">{t.cognome}</label> <br />
         <input
           onChange={(e) => {
             setCognome(e.target.value);
@@ -140,7 +140,7 @@ function Form() {
         />
       </p>
       <p>
-        <label htmlFor="youremail">{t("email")}</label> <br />
+        <label htmlFor="youremail">{t.email}</label> <br />
         <input
           onChange={(e) => setMail(e.target.value)}
           type="email"
@@ -152,7 +152,7 @@ function Form() {
       </p>
 
       <p>
-        <label htmlFor="yourmessage">{t("messaggio")}</label> <br />
+        <label htmlFor="yourmessage">{t.messaggio}</label> <br />
         <textarea
           onChange={(e) => {
             setMessaggio(e.target.value);

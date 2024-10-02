@@ -4,6 +4,7 @@ import Image from "next/image";
 import { createPortal } from "react-dom";
 import FixedModal from "../modals/fixedModal";
 import { useState } from "react";
+import React from "react";
 
 type Tdata = {
   image: string;
@@ -22,7 +23,7 @@ function SingleStaff({ data }: { data: Tdata }) {
     <>
       <li onClick={() => setModal(true)}>
         <div className={style.staff__image}>
-          <Image src={data.image} alt={data.nome} layout="fill" />
+          <Image src={data.image} alt={data.nome} fill />
         </div>
         <div className={style.staff__nome}>
           {data.nome + data.cognome}

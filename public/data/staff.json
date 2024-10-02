@@ -1,82 +1,38 @@
 {
     "it": [
         {
-            "nome": "Tizio",
-            "cognome": "Strano",
-            "ruolo": "MasterBlaster",
-            "eta": 22,
-            "image": "/image/tizio.jpg",
-            "descrizione": "Sono un ragazzo di 22 anni, mi piace la musica e il cinema. Sono appassionato di tecnologia e mi piace viaggiare.",
-            "skills": [
-                "skill1",
-                "skill2",
-                "skill3",
-                "skill4",
-                "skill5",
-                "skill6",
-                "skill7",
-                "skill8"
-            ],
-            "cv": "test.pdf"
+            "nome": "Dott. Alessandro Vincenti",
+            "ruolo": "Odontoiatra",
+            "image": "dott_alessandro_vincenti-300x230.jpg",
+            "descrizione": "Laurea Università Cattolica Roma, Odontoiatria conservativa ed estetica, Endodonzia, Protesi"
         },
         {
-            "nome": "Caio",
-            "cognome": "Frana",
-            "ruolo": "MasterBlaster",
-            "eta": 22,
-            "image": "/image/tizio.jpg",
-            "descrizione": "Sono un ragazzo di 22 anni, mi piace la musica e il cinema. Sono appassionato di tecnologia e mi piace viaggiare.",
-            "skills": [
-                "skill1",
-                "skill2",
-                "skill3",
-                "skill4",
-                "skill5",
-                "skill6",
-                "skill7",
-                "skill8"
-            ],
-            "cv": "test.pdf"
-        }
-    ],
-    "en": [
-        {
-            "nome": "Tizio",
-            "cognome": "Strano",
-            "ruolo": "MasterBlaster",
-            "eta": 22,
-            "image": "/image/tizio.jpg",
-            "descrizione": "Sono un ragazzo di 22 anni, mi piace la musica e il cinema. Sono appassionato di tecnologia e mi piace viaggiare.",
-            "skills": [
-                "skill1",
-                "skill2",
-                "skill3",
-                "skill4",
-                "skill5",
-                "skill6",
-                "skill7",
-                "skill8"
-            ],
-            "cv": "test.pdf"
+            "nome": "Dott. Sergio Bonato",
+            "ruolo": "Medico Chirurgo Odontoiatra",
+            "image": "dott_sergio_bonato-300x230.jpg",
+            "descrizione": "Laurea Università di Firenze, Chirugia Orale, Implantologia, Parodontologia"
         },
         {
-            "nome": "Caio",
-            "cognome": "Frana",
-            "ruolo": "MasterBlaster",
-            "eta": 22,
-            "image": "/image/tizio.jpg",
-            "descrizione": "Sono un ragazzo di 22 anni, mi piace la musica e il cinema. Sono appassionato di tecnologia e mi piace viaggiare.",
-            "skills": [
-                "skill1",
-                "skill2",
-                "skill3",
-                "skill4",
-                "skill5",
-                "skill6",
-                "skill7",
-                "skill8"
-            ],
-            "cv": "test.pdf"
+            "nome": "Dott. Sara Piluso",
+            "ruolo": "Odontoiatra",
+            "image": "dott_ssa_sara_piluso-300x230-1-300x230.jpg",
+            "descrizione": "Laurea Università di Firenze, Ortodonzia ed odontoiatria pediatrica"
+        },
+        {
+            "nome": "Dott. Filippo Paoletti",
+            "ruolo": "Odontoiatra",
+            "image": "dott_filippo_paoletti-300x230.jpg",
+            "descrizione": "SLaurea Università di Firenze, Gnatologo"
+        },
+        {
+            "nome": "Martina Guazzini",
+            "ruolo": "Assistente alla poltrona",
+            "image": "sig_guazzini_martina-300x230.jpg"
+        },
+        {
+            "nome": "Caterina Bogani",
+            "ruolo": "Assistente alla poltrona",
+            "image": "sig_bogani_caterina-300x230.jpg"
         }
     ]
 }

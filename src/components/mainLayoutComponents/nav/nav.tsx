@@ -1,19 +1,19 @@
 "use client";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import style from "./nav.module.scss";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
 import navigation from "../../../../public/data/navigation.json";
 
 function NavBar() {
   const pathN = usePathname();
-  const locale = useLocale();
+
   const [mobile, setMobile] = useState(false);
-  const t = navigation[locale as keyof typeof navigation];
+  const [scrolling, setScrolling] = useState(false);
+  const t = navigation["it"];
 
   function isHome() {
     if (pathN === "/") {
@@ -21,6 +21,20 @@ function NavBar() {
     }
     return false;
   }
+  function handleScroll() {
+    if (window.scrollY > 100) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
 
   useEffect(() => {
     setMobile(false);
@@ -28,29 +42,31 @@ function NavBar() {
 
   return (
     <header
-      className={`${style.header} ${isHome() ? style.header__home : null}`}
+      className={`${style.header}  ${scrolling ? style.scrolling : null}`}
     >
-      <nav className={style.mainNavBar}>
+      <nav className={`${style.mainNavBar}`}>
         <div className={style.mainNavBar__logo}>
           <Link href="/">
-            {isHome() ? (
-              <Image src="/image/logo.svg" width={300} height={58} alt="logo" />
+            {!scrolling ? (
+              <ExportedImage
+                src="/image/logo-studio-dentistico-vincenzi.png"
+                width={300}
+                height={58}
+                alt="logo"
+              />
             ) : (
-              <Image src="/image/logo.svg" width={300} height={58} alt="logo" />
+              <ExportedImage
+                src="/image/dott-vincenti-logo.png"
+                width={300}
+                height={58}
+                alt="logo"
+              />
             )}
           </Link>
         </div>
         <div
-          className={`${style.mainNavBar__navBlock} ${
-            isHome() ? style.mainNavBar__home : style.mainNavBar__inner
-          }`}
+          className={`${style.mainNavBar__navBlock} ${style.mainNavBar__inner}`}
         >
-          <div className={style.mainNavBar__navBlock__topData}>
-            Via della Stazione 27, Barga -{" "}
-            <a href="tel:+390583711372">0575 1122334</a> -{" "}
-            <a href="mailto:info@vtservices.it">info@simplesite.it</a>
-          </div>
-          <hr />
           <ul className={style.mainNavBar__navBlock__nav}>
             {t.map(
               (
@@ -64,7 +80,7 @@ function NavBar() {
                 <li
                   className={`${
                     pathN.includes(item.url || "") && style.activeLink
-                  } ${item.sub && style.hasSub}`}
+                  }`}
                   key={index}
                 >
                   <Link href={item.url || ""}>{item.name}</Link>
@@ -107,7 +123,7 @@ function NavBar() {
                 <RxCross2 />
               </div>
               <a href="/">
-                <Image
+                <ExportedImage
                   src="/image/florencebarbellstudiologo.png"
                   width={220}
                   height={40}

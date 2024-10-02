@@ -1,20 +1,24 @@
 {
     "it": [
         {
-            "name": "Servizi",
-            "url": "/it/servizi"
+            "name": "Lo Studio dentistico",
+            "url": "#"
         },
         {
-            "name": "Blog",
-            "url": "/it/blog"
+            "name": "I trattamenti",
+            "url": "#"
         },
         {
-            "name": "Contatti",
-            "url": "/it/contatti"
+            "name": "il team",
+            "url": "#"
         },
         {
-            "name": "Area Utenti",
-            "url": "/it/area-utenti"
+            "name": "strumentazione e sicurezza",
+            "url": "#"
+        },
+        {
+            "name": "contatti",
+            "url": "#"
         }
     ]
 }
