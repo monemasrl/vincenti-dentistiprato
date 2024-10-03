@@ -7,12 +7,12 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import navigation from "../../../../public/data/navigation.json";
-
+import { useLenis } from "@studio-freight/react-lenis";
 function NavBar() {
   const pathN = usePathname();
-
   const [mobile, setMobile] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+  const scroll = useLenis();
   const t = navigation["it"];
 
   function isHome() {
@@ -83,7 +83,15 @@ function NavBar() {
                   }`}
                   key={index}
                 >
-                  <Link href={item.url || ""}>{item.name}</Link>
+                  <a
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scroll?.scrollTo(item.url || "");
+                    }}
+                    href={item.url || ""}
+                  >
+                    {item.name}
+                  </a>
                   {item.sub && (
                     <ul className={style.subNav}>
                       {item.sub?.map((subItem, index) => (

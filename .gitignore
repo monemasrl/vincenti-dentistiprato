@@ -8,7 +8,9 @@
 
 # testing
 /coverage
+public/nextImageExportOptimizer/
 /public/image/nextImageExportOptimizer/
+public/image/next-image-export-optimizer-hashes.json
 # next.js
 /.next/
 /out/
