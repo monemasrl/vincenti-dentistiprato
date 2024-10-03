@@ -7,12 +7,14 @@ function AnimatedSection({
   width,
   children,
   classname,
+  scrollToMe,
 }: {
   overflowHidden?: boolean;
   animateOnce?: boolean;
   children?: React.ReactNode;
   width?: string;
   classname?: string;
+  scrollToMe?: string;
 }) {
   return (
     <motion.section
@@ -27,6 +29,7 @@ function AnimatedSection({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       viewport={{ once: animateOnce }}
+      id={scrollToMe ? scrollToMe : ""}
     >
       {children}
     </motion.section>

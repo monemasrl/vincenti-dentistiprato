@@ -11,7 +11,6 @@ type Taddress = {
 };
 
 async function fetchMapData(indirizzo: string) {
-  console.log("fetchMapData" + indirizzo);
   const data = await fetch(
     `https://nominatim.openstreetmap.org/search?q=${indirizzo}&format=json&polygon=1&addressdetails=1`
   )
@@ -44,7 +43,7 @@ function LeafletMain({ address }: { address: Taddress | null }) {
       return null;
     }
   }
-  console.log(address);
+
   useEffect(() => {
     async function fetchData(address: Taddress) {
       const addressComposed = createAddress(

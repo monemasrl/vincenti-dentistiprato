@@ -16,7 +16,7 @@ function ScrollTop() {
   return (
     <motion.div
       className={style.scrollTop}
-      style={{ opacity: visible ? 1 : 0, transition: "opacity 0.5s" }}
+      style={{ opacity: visible ? 0.5 : 0, transition: "opacity 0.5s" }}
       transition={{ duration: 0.5 }}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     >

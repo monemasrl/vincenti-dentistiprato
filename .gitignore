@@ -8,7 +8,7 @@
 
 # testing
 /coverage
-
+/public/image/nextImageExportOptimizer/
 # next.js
 /.next/
 /out/

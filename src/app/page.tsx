@@ -41,7 +41,7 @@ export default async function Home({
           buttonLink={HeroDataLang.linkURL}
         />
       </section>
-      <AnimatedSection classname={styles.section2}>
+      <AnimatedSection classname={styles.section2} scrollToMe="studio">
         <div className="subtitle">studio dentistico dott. vincenti</div>
         <h1 className="title">lo studio dentistico</h1>
         <p>
@@ -54,7 +54,7 @@ export default async function Home({
       <AnimatedSection classname={styles.section3}>
         <Gallery type="one" images={HomeDataLang.gallery1} />
       </AnimatedSection>
-      <AnimatedSection classname={styles.section4}>
+      <AnimatedSection classname={styles.section4} scrollToMe="trattamenti">
         <div className="subtitle">
           I migliori specialisti per risolvere ogni vostro problema
         </div>
@@ -96,7 +96,7 @@ export default async function Home({
           text="PER PRENDERSI CURA DI VOI<br /><span>con serietà e cortesia</span>"
         />
       </AnimatedSection>
-      <AnimatedSection classname={styles.section6}>
+      <AnimatedSection classname={styles.section6} scrollToMe="team">
         <div className="subtitle">Un team di professionisti qualificati</div>
         <h2 className="title">Il nostro team</h2>
         <p>
@@ -138,7 +138,11 @@ export default async function Home({
         />
         <hr style={{ marginTop: "-4px" }} />
       </AnimatedSection>
-      <AnimatedSection classname={styles.section8} width="1200px">
+      <AnimatedSection
+        classname={styles.section8}
+        width="1200px"
+        scrollToMe="strumentazione"
+      >
         <div className="subtitle">
           Attrezzature all’avanguardia per la tua sicurezza
         </div>
@@ -168,7 +172,7 @@ export default async function Home({
           style={{ marginTop: "-9px" }}
         />
       </AnimatedSection>
-      <AnimatedSection classname={styles.section10}>
+      <AnimatedSection classname={styles.section10} scrollToMe="contatti">
         <div className="subtitle">Non solo puntualità</div>
         <h1 className="title">Contatti e orari</h1>
         <p>

@@ -2,23 +2,23 @@
     "it": [
         {
             "name": "Lo Studio dentistico",
-            "url": "#"
+            "url": "#studio"
         },
         {
             "name": "I trattamenti",
-            "url": "#"
+            "url": "#trattamenti"
         },
         {
             "name": "il team",
-            "url": "#"
+            "url": "#team"
         },
         {
             "name": "strumentazione e sicurezza",
-            "url": "#"
+            "url": "#strumentazione"
         },
         {
             "name": "contatti",
-            "url": "#"
+            "url": "#contatti"
         }
     ]
 }
