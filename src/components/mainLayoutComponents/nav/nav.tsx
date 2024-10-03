@@ -150,7 +150,16 @@ function NavBar() {
                     }`}
                     key={index}
                   >
-                    <Link href={item.url || ""}>{item.name}</Link>
+                    <a
+                      onClick={(e) => {
+                        e.preventDefault();
+                        scroll?.scrollTo(item.url || "", { offset: -100 });
+                        setMobile(false);
+                      }}
+                      href={item.url || ""}
+                    >
+                      {item.name}
+                    </a>
                   </li>
                 ))}
               </ul>
