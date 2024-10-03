@@ -65,7 +65,9 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     letter-spacing: 1px;
-
+    @media #{$desktop} {
+      font-size: 13px;
+    }
     &__logo {
       img {
         width: 300px;
@@ -239,7 +241,7 @@
       margin: 1rem 0;
       text-align: center;
       li {
-        margin: 0.4rem 0;
+        margin: 1rem 0;
       }
     }
     &__generic {
