@@ -12,7 +12,10 @@ function NavBar() {
   const pathN = usePathname();
   const [mobile, setMobile] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+
+  // funzione per gestire lo scroll con smooth scroll LENIS
   const scroll = useLenis();
+
   const t = navigation["it"];
 
   function isHome() {
@@ -86,7 +89,7 @@ function NavBar() {
                   <a
                     onClick={(e) => {
                       e.preventDefault();
-                      scroll?.scrollTo(item.url || "");
+                      scroll?.scrollTo(item.url || "", { offset: -100 });
                     }}
                     href={item.url || ""}
                   >

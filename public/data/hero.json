@@ -2,11 +2,6 @@
     "it": {
         "titolo": "Per prendersi cura di voi <br /> con cortesia e professionalità",
         "link": "I nostri trattamenti",
-        "linkURL": "#"
-    },
-    "en": {
-        "titolo": "Per prendersi cura di voi <br />con cortesia e professionalità",
-        "link": "I nostri trattamenti",
-        "linkURL": "#"
+        "linkURL": "#trattamenti"
     }
 }

@@ -4,6 +4,8 @@ import { useScroll, useTransform, motion, m } from "framer-motion";
 import ExportedImage from "next-image-export-optimizer";
 import style from "./parallax.module.scss";
 import { useMediaQuery } from "react-responsive";
+import { useLenis } from "@studio-freight/react-lenis";
+import { useRouter } from "next/navigation";
 
 function Parallax({
   className,
@@ -12,6 +14,7 @@ function Parallax({
   text,
   buttonText,
   buttonLink,
+  buttonScroll,
 }: {
   imageURL: string;
   alt: string;
@@ -19,8 +22,10 @@ function Parallax({
   text?: string;
   buttonText?: string;
   buttonLink?: string;
+  buttonScroll?: string;
 }) {
   const paralRef = useRef(null);
+  const router = useRouter();
   const { scrollYProgress } = useScroll({
     target: paralRef,
     offset: ["start end", "end start"],
@@ -34,7 +39,7 @@ function Parallax({
   const landscape = useMediaQuery({
     query: "(max-width: 1024px)",
   });
-
+  const scroll = useLenis();
   return (
     <motion.div
       className={`${style.parallaxContainer} ${
@@ -58,7 +63,17 @@ function Parallax({
         {buttonText && (
           <a
             className={style.parallaxContainer__parallax__testo__button}
-            href={buttonLink}
+            onClick={(e) => {
+              e.preventDefault();
+              //se è un'ancora usa lo scroll di lenis
+              if (buttonScroll) {
+                scroll?.scrollTo(buttonScroll, { offset: -100 });
+              }
+              if (buttonLink) {
+                //altrimenti usa il router di next
+                router.push(buttonLink || "");
+              }
+            }}
           >
             {buttonText}
           </a>

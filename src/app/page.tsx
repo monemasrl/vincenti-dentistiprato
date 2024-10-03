@@ -38,7 +38,7 @@ export default async function Home({
           alt="heroImage"
           text={HeroDataLang.titolo}
           buttonText={HeroDataLang.link}
-          buttonLink={HeroDataLang.linkURL}
+          buttonScroll={HeroDataLang.linkURL}
         />
       </section>
       <AnimatedSection classname={styles.section2} scrollToMe="studio">
