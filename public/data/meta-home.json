@@ -1,16 +1,16 @@
 {
     "it": {
         "metaHtml": {
-            "title": "simple website",
-            "description": "Lorem impsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum libero nec, ultrices nunc. Nulla facilisi. Nullam nec nunc nec nunc.",
-            "keywords": "keyword1, keyword2, keyword3",
+            "title": "Studio dentistico Dott. Vincenti",
+            "description": "Lo studio dentistico Dott. Vincenti, situato a Prato, si avvale di uno staff di professionisti qualificati e di attrezzature moderne per la prevenzione e la cura delle malattie della bocca e per le riabilitazioni su impianti.",
+            "keywords": "dentista, Prato, dott. Vincenti, studio dentistico",
             "openGraph": {
-                "title": "simple website",
-                "description": "Lorem impsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum libero nec, ultrices nunc. Nulla facilisi. Nullam nec nunc nec nunc.",
+                "title": "Studio dentistico Dott. Vincenti",
+                "description": "Lo studio dentistico Dott. Vincenti, situato a Prato, si avvale di uno staff di professionisti qualificati e di attrezzature moderne per la prevenzione e la cura delle malattie della bocca e per le riabilitazioni su impianti.",
                 "type": "website",
                 "locale": "it_IT",
                 "url": "https://dottvincenti.dentistiprato.com/",
-                "siteName": "simple website",
+                "siteName": "Studio dentistico Dott. Vincenti",
                 "images": [
                     {
                         "url": "https://dottvincenti.dentistiprato.com/image/og-image.jpg",
@@ -28,28 +28,20 @@
                 "https://dottvincenti.dentistiprato.com/image/4_3graph.jpg",
                 "https://dottvincenti.dentistiprato.com/image/mainimage.jpg"
             ],
-            "name": "simple website",
+            "name": "Studio dentistico Dott. Vincenti",
             "address": [
                 {
                     "@type": "PostalAddress",
-                    "streetAddress": " via della stranezza 27 Mologno Barga",
-                    "addressLocality": "Lucca",
-                    "addressRegion": "Toscana",
-                    "postalCode": "55051",
+                    "streetAddress": "Via Torelli, 57, 59100 Prato PO",
+                    "addressLocality": "Prato",
+                    "addressRegion": "Prato",
+                    "postalCode": "59100",
                     "addressCountry": "IT"
-                },
-                {
-                    "@type": "PostalAddress",
-                    "streetAddress": "via della figata totale 27 Mologno Barga",
-                    "addressLocality": "liguria",
-                    "addressRegion": "Genova",
-                    "postalCode": "123213",
-                    "addressCountry": "GE"
                 }
             ],
             "url": "https://dottvincenti.dentistiprato.com/",
-            "telephone": "+320583711372",
-            "email": "info@test.it"
+            "telephone": "+390574514380",
+            "email": "info@dottvincenti.dentistiprato.com"
         }
     }
 }

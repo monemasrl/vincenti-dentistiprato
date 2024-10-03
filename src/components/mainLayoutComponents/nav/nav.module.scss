@@ -22,7 +22,7 @@
       width: 200px;
       height: auto;
     }
-    a {
+    div ul li a {
       color: white;
       &:hover {
         color: white;
@@ -62,7 +62,7 @@
     text-transform: uppercase;
     align-items: flex-end;
     gap: 2rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
     letter-spacing: 1px;
     @media #{$desktop} {
