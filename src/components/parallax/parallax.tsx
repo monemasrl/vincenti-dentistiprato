@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll, useTransform, motion, m } from "framer-motion";
 import ExportedImage from "next-image-export-optimizer";
 import style from "./parallax.module.scss";
 import { useMediaQuery } from "react-responsive";
@@ -25,6 +25,7 @@ function Parallax({
     target: paralRef,
     offset: ["start end", "end start"],
   });
+
   const parallax = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
   const desktop = useMediaQuery({
@@ -53,7 +54,7 @@ function Parallax({
           className={style.parallaxContainer__parallax__testo_div}
           dangerouslySetInnerHTML={{ __html: text || "" }}
         />
-        <br />
+
         {buttonText && (
           <a
             className={style.parallaxContainer__parallax__testo__button}

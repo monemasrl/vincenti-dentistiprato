@@ -3,7 +3,7 @@
   width: 100%;
   background-color: $blue;
   color: white;
-  display: grid;
+  text-align: center;
   padding: 4rem 2rem;
   justify-items: center;
   align-items: end;
@@ -27,6 +27,8 @@
       display: flex;
       gap: 1rem;
       font-size: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
     }
     img {
       margin-bottom: 1rem;

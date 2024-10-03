@@ -32,7 +32,9 @@ form.form {
     display: none;
   }
   @media #{$phone} {
-    padding: 0rem;
+    padding: 1rem;
+    width: 95%;
+    margin: 0;
   }
   input,
   textarea,

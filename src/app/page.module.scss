@@ -1,6 +1,9 @@
 .section2 {
   text-align: center;
   padding: 6rem 0;
+  @media #{$tablet} {
+    padding: 3rem 0;
+  }
   p {
     color: #666666;
     font-family: roboto condensed, sans-serif;
@@ -15,6 +18,9 @@
   margin: 0 auto;
   text-align: center;
   padding: 6rem 0;
+  @media #{$tablet} {
+    padding: 3rem 0;
+  }
   .trattamenti {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -32,6 +38,12 @@
       justify-content: flex-start;
       color: grey;
       font-weight: 300;
+      @media #{$tablet} {
+        grid-column: span 3;
+      }
+      @media #{$phone} {
+        grid-column: span 6;
+      }
       &__imageBox {
         height: 65px;
       }
@@ -52,9 +64,21 @@
     }
     &__6 {
       grid-column: 2 / span 2;
+      @media #{$tablet} {
+        grid-column: span 3;
+      }
+      @media #{$phone} {
+        grid-column: span 6;
+      }
     }
     &__7 {
       grid-column: 4 / span 2;
+      @media #{$tablet} {
+        grid-column: span 3;
+      }
+      @media #{$phone} {
+        grid-column: span 6;
+      }
     }
   }
 }
@@ -63,9 +87,20 @@
   margin: 0 auto;
   text-align: center;
   padding: 6rem 0;
+  @media #{$tablet} {
+    padding: 3rem 0;
+  }
   .staff {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    &__box {
+      @media #{$laptop} {
+        grid-column: span 2;
+      }
+      @media #{$tablet} {
+        grid-column: span 4;
+      }
+    }
     grid-gap: 1rem;
     hr {
       width: 50%;
@@ -90,18 +125,31 @@
     }
     img {
       width: 100%;
-
+      max-width: 300px;
+      height: auto;
       object-fit: cover;
     }
     &__box {
       &__4 {
         grid-column: 2 / 3;
+        @media #{$laptop} {
+          grid-column: span 2;
+        }
+        @media #{$tablet} {
+          grid-column: span 4;
+        }
         hr {
           display: none;
         }
       }
       &__5 {
         grid-column: 3 / 4;
+        @media #{$laptop} {
+          grid-column: span 2;
+        }
+        @media #{$tablet} {
+          grid-column: span 4;
+        }
         hr {
           display: none;
         }
@@ -124,6 +172,9 @@
 .section8 {
   padding: 6rem 0;
   text-align: center;
+  @media #{$tablet} {
+    padding: 3rem 0;
+  }
   p {
     margin-bottom: 4rem;
   }
@@ -143,8 +194,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: white;
+    @media #{$tablet} {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
     &__box {
       padding: 1rem 2rem 0 2rem;
+
       &:nth-child(1) {
         background-color: #007db6;
       }

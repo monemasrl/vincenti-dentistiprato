@@ -25,8 +25,15 @@
     &__testo {
       &_div {
         font-size: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         @media #{$landscape} {
           font-size: 40px;
+        }
+        @media #{$tablet} {
+          font-size: 17px;
         }
       }
       position: absolute;
@@ -49,7 +56,7 @@
       &__button {
         white-space: nowrap;
         display: block;
-        margin: 0 auto;
+        margin: 2rem auto 0 auto;
         width: 100%;
         max-width: 440px;
         font-size: 16px;
@@ -102,4 +109,16 @@
 }
 .parallaxSection5 {
   height: 50vh;
+  @media #{$desktop} {
+    height: 40vh;
+  }
+  @media #{$landscape} {
+    height: 27vh;
+  }
+
+  img {
+    @media #{$laptop} {
+      top: 2%;
+    }
+  }
 }

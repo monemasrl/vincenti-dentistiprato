@@ -25,4 +25,16 @@
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   margin: 1rem 0;
+  @media #{$tablet} {
+    gap: 1rem;
+  }
+  &__col {
+    @media #{$tablet} {
+      grid-column: span 2;
+    }
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
 }

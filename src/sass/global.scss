@@ -13,6 +13,13 @@ ul {
 }
 main {
   margin-top: 122px;
+  @media #{$tablet} {
+    margin-top: 82px;
+  }
+  @media #{$phone} {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .leaflet-container {
   width: 100%;
@@ -56,4 +63,9 @@ button {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 50px;
+  hyphens: auto;
+  @media #{$tablet} {
+    font-size: 45px;
+    line-height: 40px;
+  }
 }
