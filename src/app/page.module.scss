@@ -1,12 +1,3 @@
-.section1 p {
-  font-size: 70px;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
 .section2 {
   text-align: center;
   padding: 6rem 0;
@@ -78,7 +69,8 @@
     grid-gap: 1rem;
     hr {
       width: 50%;
-      border: 0.5px solid lightgray;
+      opacity: 0.3;
+      margin: 1rem auto;
     }
     h3 {
       color: $blue;
@@ -86,13 +78,14 @@
       font-size: 21px;
       line-height: 22px;
       text-transform: uppercase;
-      margin-bottom: 1rem;
+      margin-bottom: 0.3rem;
     }
     p {
       color: grey;
       font-family: roboto condensed, sans-serif;
       font-size: 14px;
       margin-top: 0;
+      margin-bottom: 0;
       line-height: 18px;
     }
     img {
@@ -169,6 +162,9 @@
         text-transform: uppercase;
         font-weight: 300;
         margin-bottom: 0;
+      }
+      hr {
+        opacity: 0.3;
       }
       p {
         color: white;

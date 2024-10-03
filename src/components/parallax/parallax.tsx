@@ -3,21 +3,20 @@ import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import ExportedImage from "next-image-export-optimizer";
 import style from "./parallax.module.scss";
+import { useMediaQuery } from "react-responsive";
 
 function Parallax({
+  className,
   imageURL,
   alt,
-  height,
   text,
   buttonText,
   buttonLink,
-  textSize,
 }: {
   imageURL: string;
   alt: string;
-  height: string;
+  className?: string;
   text?: string;
-  textSize?: string;
   buttonText?: string;
   buttonLink?: string;
 }) {
@@ -28,25 +27,30 @@ function Parallax({
   });
   const parallax = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
+  const desktop = useMediaQuery({
+    query: "(max-width: 1224px)",
+  });
+  const landscape = useMediaQuery({
+    query: "(max-width: 1024px)",
+  });
+
   return (
     <motion.div
-      className={style.parallaxContainer}
+      className={`${style.parallaxContainer} ${
+        style[className as keyof typeof style]
+      } ${landscape ? style["small"] : desktop ? style["medium"] : ""}`}
       ref={paralRef}
-      style={{
-        height: height,
-      }}
     >
-      <motion.div className={style.parallaxContainer__parallax}>
-        <motion.div
-          style={{ y: parallax }}
-          className={style.parallaxContainer__parallax__img}
-        >
-          <ExportedImage src={imageURL} width={1920} height={900} alt={alt} />
-        </motion.div>
+      <motion.div
+        style={{ y: landscape ? "0px" : parallax }}
+        className={style.parallaxContainer__parallax__img}
+      >
+        <ExportedImage src={imageURL} width={1920} height={900} alt={alt} />
       </motion.div>
+
       <motion.div className={style.parallaxContainer__parallax__testo}>
         <div
-          style={{ fontSize: textSize }}
+          className={style.parallaxContainer__parallax__testo_div}
           dangerouslySetInnerHTML={{ __html: text || "" }}
         />
         <br />

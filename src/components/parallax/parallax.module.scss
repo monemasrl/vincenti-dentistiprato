@@ -11,8 +11,10 @@
     top: 0;
     &__img {
       height: 100vh;
-
       position: relative;
+      @media #{$landscape} {
+        height: auto;
+      }
       img {
         width: 100%;
         height: auto;
@@ -21,6 +23,12 @@
       }
     }
     &__testo {
+      &_div {
+        font-size: 70px;
+        @media #{$landscape} {
+          font-size: 40px;
+        }
+      }
       position: absolute;
       top: 50%;
       left: 50%;
@@ -40,33 +48,28 @@
       }
       &__button {
         white-space: nowrap;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 440px;
         font-size: 16px;
         line-height: 16px;
         font-weight: 700;
         color: rgb(255, 255, 255);
-
         background-color: rgba(0, 0, 0, 0);
-        padding: 15px 130px;
+        padding: 15px 0;
         border-color: rgb(255, 255, 255);
         border-radius: 3px;
         outline: none;
         box-shadow: none;
         box-sizing: border-box;
         cursor: pointer;
-        visibility: inherit;
-        transition: none;
-        font-style: normal;
+
         border-width: 2px;
         border-style: solid;
-        margin: 0px;
+
         letter-spacing: 1px;
-        min-height: 0px;
-        min-width: 0px;
-        max-height: none;
-        max-width: none;
-        opacity: 1;
-        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-        transform-origin: 50% 50% 0px;
+
         text-decoration: none;
         &:hover {
           background-color: rgb(255, 255, 255);
@@ -75,4 +78,28 @@
       }
     }
   }
+}
+
+.parallaxSection1 {
+  height: 88vh;
+  @media #{$large} {
+    height: auto;
+  }
+  &.medium {
+    height: 70vh;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    @media #{$laptop} {
+      top: 10% !important;
+    }
+    @media #{$large} {
+      top: 0% !important;
+    }
+  }
+}
+.parallaxSection5 {
+  height: 50vh;
 }

@@ -9,6 +9,7 @@ import Parallax from "@/components/parallax/parallax";
 import Gallery from "@/components/gallery/gallery";
 import ExportedImage from "next-image-export-optimizer";
 import generic from "../../public/data/generic.json";
+
 /**
  * PAGINA
  * Utilizzare le pagine per fetchare i dati e passarli ai componenti
@@ -32,13 +33,12 @@ export default async function Home({
     <main className={styles.main}>
       <section className={styles.section1}>
         <Parallax
+          className={"parallaxSection1"}
           imageURL={HeroImage}
           alt="heroImage"
-          height="88vh"
           text={HeroDataLang.titolo}
           buttonText={HeroDataLang.link}
           buttonLink={HeroDataLang.linkURL}
-          textSize="70px"
         />
       </section>
       <AnimatedSection classname={styles.section2}>
@@ -90,9 +90,9 @@ export default async function Home({
       </AnimatedSection>
       <AnimatedSection classname={styles.section5}>
         <Parallax
+          className={"parallaxSection5"}
           imageURL="/image/dr_vincenti_center_band-1.jpg"
           alt="parallax"
-          height="50vh"
           text="PER PRENDERSI CURA DI VOI<br /><span>con serietà e cortesia</span>"
         />
       </AnimatedSection>
