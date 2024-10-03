@@ -23,7 +23,7 @@ const CookieConsentBanner = () => {
 
   const handleReject = () => {
     setShowBanner(false);
-    cookie.set("cookieConsent", "rejected", { expires: 365 });
+    cookie.set("cookieConsent", "rejected");
     push("https://google.com");
   };
 
