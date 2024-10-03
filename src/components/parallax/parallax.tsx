@@ -11,11 +11,13 @@ function Parallax({
   text,
   buttonText,
   buttonLink,
+  textSize,
 }: {
   imageURL: string;
   alt: string;
   height: string;
   text?: string;
+  textSize?: string;
   buttonText?: string;
   buttonLink?: string;
 }) {
@@ -24,7 +26,7 @@ function Parallax({
     target: paralRef,
     offset: ["start end", "end start"],
   });
-  const parallax = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const parallax = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
   return (
     <motion.div
@@ -34,18 +36,19 @@ function Parallax({
         height: height,
       }}
     >
-      <motion.div
-        className={style.parallaxContainer__parallax}
-        style={{
-          y: parallax,
-        }}
-      >
-        <div className={style.parallaxContainer__parallax__img}>
-          <ExportedImage src={imageURL} fill alt={alt} />
-        </div>
+      <motion.div className={style.parallaxContainer__parallax}>
+        <motion.div
+          style={{ y: parallax }}
+          className={style.parallaxContainer__parallax__img}
+        >
+          <ExportedImage src={imageURL} width={1920} height={900} alt={alt} />
+        </motion.div>
       </motion.div>
       <motion.div className={style.parallaxContainer__parallax__testo}>
-        <div dangerouslySetInnerHTML={{ __html: text || "" }} />
+        <div
+          style={{ fontSize: textSize }}
+          dangerouslySetInnerHTML={{ __html: text || "" }}
+        />
         <br />
         {buttonText && (
           <a

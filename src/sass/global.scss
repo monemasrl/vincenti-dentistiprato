@@ -14,9 +14,10 @@ ul {
 main {
   margin-top: 117px;
 }
-.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+.leaflet-container {
   width: 100%;
   height: 300px;
+  filter: grayscale(30%);
 }
 .leaflet-top,
 .leaflet-bottom {
@@ -44,7 +45,7 @@ button {
   font-weight: 400;
   margin-bottom: -5px;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
 }
 .title {
   color: #0073a9;

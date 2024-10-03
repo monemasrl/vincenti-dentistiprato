@@ -8,6 +8,9 @@
   width: 100%;
   background-color: white;
   &.scrolling {
+    .burger {
+      color: white;
+    }
     background-color: $blue;
     position: fixed;
     top: 0;
@@ -165,6 +168,7 @@
 .burger {
   display: none;
   font-size: 1.5rem;
+  color: $blue;
   &__inner {
     color: $navyBlue;
   }

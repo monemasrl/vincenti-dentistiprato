@@ -26,8 +26,8 @@ function Form() {
   const t = generic.FormContatti;
   const [nome, setNome] = useState<string>("");
   const [errorNome, setErrorNome] = useState<string>("");
-  const [cognome, setCognome] = useState<string>("");
-  const [errorCognome, setErrorCognome] = useState<string>("");
+  const [tel, setTel] = useState<string>("");
+  const [errorTel, setErrorTel] = useState<string>("");
   const [mail, setMail] = useState<string>("");
   const [errorMail, setErrorMail] = useState<string>("");
   const [messaggio, setMessaggio] = useState<string>("");
@@ -42,10 +42,10 @@ function Form() {
     } else {
       setErrorNome("");
     }
-    if (cognome.length < 3 && cognome.length > 0) {
-      setErrorCognome(t.err_cognome);
+    if (tel.length < 8 && tel.length > 0) {
+      setErrorTel(t.err_tel);
     } else {
-      setErrorCognome("");
+      setErrorTel("");
     }
 
     if (mail.length < 6 && mail.length > 0) {
@@ -65,7 +65,7 @@ function Form() {
     //controllo sul submit del form netlify
     if (
       nome.length < 3 ||
-      cognome.length < 3 ||
+      tel.length < 3 ||
       mail.length < 3 ||
       !mail.includes("@") ||
       messaggio.length < 10
@@ -74,7 +74,7 @@ function Form() {
     } else {
       setSubmit(true);
     }
-  }, [nome, mail, messaggio, cognome]);
+  }, [nome, mail, messaggio, tel]);
 
   const handleFormSubmit = async (event: any) => {
     event.preventDefault();
@@ -90,7 +90,7 @@ function Form() {
       });
       if (res.status === 200) {
         setNome("");
-        setCognome("");
+        setTel("");
         setMail("");
         setMessaggio("");
         setStatus("ok");
@@ -120,6 +120,7 @@ function Form() {
             setNome(e.target.value);
           }}
           type="text"
+          placeholder={t.nome}
           name="nome"
           id="nome"
           value={nome}
@@ -127,15 +128,16 @@ function Form() {
         />
       </p>
       <p>
-        <label htmlFor="cognome">{t.cognome}</label> <br />
+        <label htmlFor="cognome">{t.tel}</label> <br />
         <input
           onChange={(e) => {
-            setCognome(e.target.value);
+            setTel(e.target.value);
           }}
+          placeholder={t.tel}
           type="text"
           name="cognome"
-          value={cognome}
-          id=""
+          value={tel}
+          id="cognome"
           required
         />
       </p>
@@ -143,6 +145,7 @@ function Form() {
         <label htmlFor="youremail">{t.email}</label> <br />
         <input
           onChange={(e) => setMail(e.target.value)}
+          placeholder={t.email}
           type="email"
           name="email"
           value={mail}
@@ -157,6 +160,7 @@ function Form() {
           onChange={(e) => {
             setMessaggio(e.target.value);
           }}
+          placeholder={t.messaggio}
           name="message"
           value={messaggio}
           id="yourmessage"
@@ -165,7 +169,7 @@ function Form() {
       </p>
       <div style={{ height: "20px" }}>
         {errorNome && <p className={style.error}>{errorNome}</p>}
-        {errorCognome && <p className={style.error}>{errorCognome}</p>}
+        {errorTel && <p className={style.error}>{errorTel}</p>}
         {errorMail && <p className={style.error}>{errorMail}</p>}
         {errorMessaggio && <p className={style.error}>{errorMessaggio}</p>}
       </div>

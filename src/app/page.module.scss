@@ -120,7 +120,8 @@
   text-align: center;
   img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-width: 1400px;
     object-fit: cover;
   }
   hr {
@@ -130,10 +131,61 @@
 .section8 {
   padding: 6rem 0;
   text-align: center;
+  p {
+    margin-bottom: 4rem;
+  }
   .strumentazioneGallery {
     margin-top: 2rem;
   }
 }
 .section9 {
   text-align: center;
+}
+
+.section10 {
+  text-align: center;
+  max-width: 1200px;
+  padding-bottom: 3rem;
+  .contatti {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    &__box {
+      padding: 1rem 2rem 0 2rem;
+      &:nth-child(1) {
+        background-color: #007db6;
+      }
+      &:nth-child(2) {
+        background-color: #0174aa;
+      }
+      &:nth-child(3) {
+        background-color: #00618d;
+      }
+      img {
+        width: 40px;
+        height: auto;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 0;
+      }
+      p {
+        color: white;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        span {
+          margin-top: 1rem;
+          display: block;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+.section11 {
+  text-align: center;
+  background-color: #fafafa;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
 }

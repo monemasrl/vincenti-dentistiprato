@@ -124,7 +124,7 @@ function NavBar() {
               </div>
               <a href="/">
                 <ExportedImage
-                  src="/image/florencebarbellstudiologo.png"
+                  src="/image/logo-studio-dentistico-vincenzi.png"
                   width={220}
                   height={40}
                   alt="logo"

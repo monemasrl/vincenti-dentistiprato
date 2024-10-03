@@ -5,6 +5,7 @@ import JsonldMetaData from "@/components/metaData/jsonldmetadata";
 import meta from "../../public/data/meta-home.json";
 import Nav from "@/components/mainLayoutComponents/nav/nav";
 import CookieConsentBanner from "@/components/cookieConsent/cookieConsent";
+import Footer from "@/components/mainLayoutComponents/footer/footer";
 
 const inter = Roboto_Condensed({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default async function RootLayout({
         <CookieConsentBanner />
         <Nav />
         <SmoothScrolling>{children}</SmoothScrolling>
+        <Footer />
       </body>
     </html>
   );
