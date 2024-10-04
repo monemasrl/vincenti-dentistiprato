@@ -1,24 +1,14 @@
 import React from "react";
-import Image from "next/image";
+
 import style from "./modals.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
-type Tdata = {
-  image: string;
-  nome: string;
-  cognome: string;
-  descrizione: string;
-  skills: string[];
-  ruolo: string;
-  cv?: string;
-  eta: number;
-};
 
 function FixedModal({
   data,
   modalState,
   closeModal,
 }: {
-  data: Tdata;
+  data: any;
   modalState: boolean;
   closeModal: React.Dispatch<React.SetStateAction<boolean | true>>;
 }) {
@@ -46,48 +36,7 @@ function FixedModal({
             ease: "easeInOut",
           }}
         >
-          <motion.div
-            className={style.fixedModal__image}
-            initial={{
-              opacity: 0,
-              x: "-100vw",
-            }}
-            animate={{
-              opacity: 1,
-              x: "0vw",
-            }}
-            transition={{
-              duration: 1,
-              ease: "easeInOut",
-              delay: 0.7,
-            }}
-          >
-            <Image src={dataScheda.image} alt={dataScheda.nome} fill />
-          </motion.div>
-          <div className={style.fixedModal__content}>
-            <div
-              className={style.fixedModal__content__close}
-              onClick={() => closeModal(false)}
-            >
-              close
-            </div>
-            <div className={style.fixedModal__content__title}>
-              <h3>{dataScheda.nome + " " + dataScheda.cognome}</h3>
-            </div>
-            <p dangerouslySetInnerHTML={{ __html: dataScheda.descrizione }} />
-            <p>
-              <span>SKILLS</span>
-              <ul>
-                {dataScheda.skills.map((item, index) => {
-                  return <li key={index}>{item}</li>;
-                })}
-              </ul>
-            </p>
-            <p>
-              <span>Tecnologie</span>
-              {dataScheda.cv}
-            </p>
-          </div>
+          test
         </motion.div>
       )}
     </AnimatePresence>

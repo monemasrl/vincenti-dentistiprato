@@ -1,8 +1,12 @@
 "use client";
-
+import { useState } from "react";
 import style from "./gallery.module.scss";
 import ExportedImage from "next-image-export-optimizer";
+import FixedModal from "../modals/fixedModal";
+
 function Gallery({ type, images }: { type: string; images: string[] }) {
+  const [modalState, setModalState] = useState(false);
+
   if (type === "one") {
     return (
       <div className={style.galleryGrid}>
@@ -12,6 +16,9 @@ function Gallery({ type, images }: { type: string; images: string[] }) {
             width={900}
             height={450}
             alt="gallery"
+            onClick={() => {
+              setModalState(true);
+            }}
           />
         </div>
         <div className={style.galleryGrid__colBig}>
@@ -54,6 +61,11 @@ function Gallery({ type, images }: { type: string; images: string[] }) {
             alt="gallery"
           />
         </div>
+        <FixedModal
+          data={images}
+          modalState={modalState}
+          closeModal={setModalState}
+        />
       </div>
     );
   }
