@@ -128,16 +128,16 @@ function Form() {
         />
       </p>
       <p>
-        <label htmlFor="cognome">{t.tel}</label> <br />
+        <label htmlFor="telefono">{t.tel}</label> <br />
         <input
           onChange={(e) => {
             setTel(e.target.value);
           }}
           placeholder={t.tel}
           type="text"
-          name="cognome"
+          name="telefono"
           value={tel}
-          id="cognome"
+          id="telefono"
           required
         />
       </p>
