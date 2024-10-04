@@ -30,7 +30,6 @@ function SingleStaff({ data }: { data: Tdata }) {
           <span>{data.ruolo}</span>
         </div>
       </li>
-      <FixedModal data={data} modalState={openModal} closeModal={setModal} />
     </>
   );
 }
