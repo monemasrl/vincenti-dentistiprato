@@ -4,16 +4,14 @@ import style from "./modals.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
 
 function FixedModal({
-  data,
+  children,
   modalState,
   closeModal,
 }: {
-  data: any;
+  children: React.ReactNode;
   modalState: boolean;
   closeModal: React.Dispatch<React.SetStateAction<boolean | true>>;
 }) {
-  const dataScheda = data;
-
   return (
     <AnimatePresence>
       {modalState && (
@@ -36,7 +34,7 @@ function FixedModal({
             ease: "easeInOut",
           }}
         >
-          test
+          {children}
         </motion.div>
       )}
     </AnimatePresence>

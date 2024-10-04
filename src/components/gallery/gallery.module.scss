@@ -3,6 +3,14 @@
   grid-template-columns: repeat(4, 25%);
   width: 100%;
   margin: 1rem 0;
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
   &__colBig {
     grid-column: span 2;
     img {
@@ -32,6 +40,14 @@
     @media #{$tablet} {
       grid-column: span 2;
     }
+  }
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    height: 100%;
   }
   img {
     height: auto;
