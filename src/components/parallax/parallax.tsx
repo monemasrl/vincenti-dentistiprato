@@ -51,7 +51,13 @@ function Parallax({
         style={{ y: landscape ? "0px" : parallax }}
         className={style.parallaxContainer__parallax__img}
       >
-        <ExportedImage src={imageURL} width={1920} height={900} alt={alt} />
+        <ExportedImage
+          src={imageURL}
+          width={1920}
+          height={900}
+          alt={alt}
+          sizes="(max-width: 440px) 350px, (max-width: 768px) 768px, 1920px"
+        />
       </motion.div>
 
       <motion.div className={style.parallaxContainer__parallax__testo}>

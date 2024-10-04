@@ -64,6 +64,7 @@ button {
   margin-bottom: 0;
   line-height: 50px;
   hyphens: auto;
+  word-break: break-all;
   @media #{$tablet} {
     font-size: 45px;
     line-height: 40px;
