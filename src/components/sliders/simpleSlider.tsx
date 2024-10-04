@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import SwiperCore from "swiper";
-import { Autoplay } from "swiper/modules";
-import { FreeMode, Navigation, Thumbs, EffectFade } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -22,6 +20,7 @@ function SimpleSlider({ data, id }: { data: string[]; id: number }) {
       <Swiper
         navigation={true}
         modules={[Navigation]}
+        loop={true}
         className="mySwiper"
         onSwiper={(swiper) => setSwiper(swiper)}
       >

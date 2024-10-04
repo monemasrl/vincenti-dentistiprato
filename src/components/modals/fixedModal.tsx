@@ -19,15 +19,18 @@ function FixedModal({
           className={style.fixedModal}
           initial={{
             opacity: 0,
-            x: "-100vw",
+
+            filter: "blur(40px)",
           }}
           animate={{
             opacity: 1,
-            x: "0vw",
+
+            filter: "blur(0px)",
           }}
           exit={{
             opacity: 0,
-            x: "-100vw",
+
+            filter: "blur(10px)",
           }}
           transition={{
             duration: 1,
@@ -35,6 +38,12 @@ function FixedModal({
           }}
         >
           {children}
+          <div
+            className={style.fixedModal__backGroundClose}
+            onClick={() => {
+              closeModal(false);
+            }}
+          ></div>
         </motion.div>
       )}
     </AnimatePresence>
