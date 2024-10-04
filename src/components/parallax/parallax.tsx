@@ -67,7 +67,7 @@ function Parallax({
         />
 
         {buttonText && (
-          <a
+          <button
             className={style.parallaxContainer__parallax__testo__button}
             onClick={(e) => {
               e.preventDefault();
@@ -82,7 +82,7 @@ function Parallax({
             }}
           >
             {buttonText}
-          </a>
+          </button>
         )}
       </motion.div>
     </motion.div>
