@@ -2,7 +2,10 @@ import React from "react";
 
 function Page() {
   return (
-    <div style={{ maxWidth: "1200px", margin: "10rem auto" }}>
+    <div
+      className="cookiePage"
+      style={{ maxWidth: "1200px", margin: "10rem auto" }}
+    >
       <h1>Cookie Policy</h1>
       <p>
         Il sito web [https://dottvincenti.dentistiprato.com] utilizza cookie e
