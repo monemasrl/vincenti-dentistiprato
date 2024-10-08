@@ -17,11 +17,7 @@ import generic from "../../public/data/generic.json";
  * Passare i dati ai componenti tramite props
  */
 
-export default async function Home({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export default async function Home() {
   const HeroDataLang = heroData["it"];
   const HomeDataLang = homeData["it"];
   const StaffDataLang = staffData["it"];

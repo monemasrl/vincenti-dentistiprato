@@ -53,6 +53,9 @@ button {
   margin-bottom: -5px;
   text-transform: uppercase;
   margin-bottom: 5px;
+  @media #{$phone} {
+    font-size: 17px;
+  }
 }
 .title {
   color: #0073a9;
@@ -67,5 +70,9 @@ button {
   @media #{$tablet} {
     font-size: 40px;
     line-height: 40px;
+  }
+  @media #{$phone} {
+    font-size: 30px;
+    line-height: 30px;
   }
 }

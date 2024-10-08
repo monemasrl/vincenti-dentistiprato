@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { useScroll, useTransform, motion, m } from "framer-motion";
 import ExportedImage from "next-image-export-optimizer";
-import style from "./parallax.module.scss";
+import "./parallax.scss";
 import { useMediaQuery } from "react-responsive";
 import { useLenis } from "@studio-freight/react-lenis";
 import { useRouter } from "next/navigation";
@@ -42,14 +42,14 @@ function Parallax({
   const scroll = useLenis();
   return (
     <motion.div
-      className={`${style.parallaxContainer} ${
-        style[className as keyof typeof style]
-      } ${landscape ? style["small"] : desktop ? style["medium"] : ""}`}
+      className={`${"parallaxContainer"} ${className || ""} ${
+        landscape ? "small" : desktop ? "medium" : ""
+      }`}
       ref={paralRef}
     >
       <motion.div
         style={{ y: landscape ? "0px" : parallax }}
-        className={style.parallaxContainer__parallax__img}
+        className={"parallaxContainer__parallax__img"}
       >
         <ExportedImage
           src={imageURL}
@@ -60,15 +60,15 @@ function Parallax({
         />
       </motion.div>
 
-      <motion.div className={style.parallaxContainer__parallax__testo}>
+      <motion.div className={"parallaxContainer__parallax__testo"}>
         <div
-          className={style.parallaxContainer__parallax__testo_div}
+          className={"parallaxContainer__parallax__testo_div"}
           dangerouslySetInnerHTML={{ __html: text || "" }}
         />
 
         {buttonText && (
           <button
-            className={style.parallaxContainer__parallax__testo__button}
+            className={"parallaxContainer__parallax__testo__button"}
             onClick={(e) => {
               e.preventDefault();
               //se è un'ancora usa lo scroll di lenis

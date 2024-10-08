@@ -93,12 +93,17 @@
 
 .parallaxSection1 {
   height: 88vh;
+
   @media #{$large} {
     height: auto;
   }
   &.medium {
     height: 70vh;
   }
+  .parallaxContainer__parallax__testo_div {
+    font-size: 1.5rem;
+  }
+
   img {
     width: 100%;
     height: auto;
@@ -119,7 +124,9 @@
   @media #{$landscape} {
     height: 27vh;
   }
-
+  @media #{$tablet} {
+    height: 23vh;
+  }
   img {
     @media #{$laptop} {
       top: 2%;
