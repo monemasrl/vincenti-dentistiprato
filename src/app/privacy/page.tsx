@@ -1,7 +1,7 @@
 function Page() {
   return (
     <>
-      <div style={{ maxWidth: "1200px", margin: "10rem auto" }}>
+      <div className="privacyPage">
         <h1 className="privacy-policy-h1">
           Privacy Policy
           <br />
