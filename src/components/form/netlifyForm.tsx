@@ -32,6 +32,7 @@ function Form() {
   const [errorMail, setErrorMail] = useState<string>("");
   const [messaggio, setMessaggio] = useState<string>("");
   const [errorMessaggio, setErrorMessaggio] = useState<string>("");
+  const [privacy, setPrivacy] = useState<boolean>(false);
   const [submit, setSubmit] = useState<boolean>(false);
   const [status, setStatus] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -68,13 +69,14 @@ function Form() {
       tel.length < 3 ||
       mail.length < 3 ||
       !mail.includes("@") ||
-      messaggio.length < 10
+      messaggio.length < 10 ||
+      !privacy
     ) {
       setSubmit(false);
     } else {
       setSubmit(true);
     }
-  }, [nome, mail, messaggio, tel]);
+  }, [nome, mail, messaggio, tel, privacy]);
 
   const handleFormSubmit = async (event: any) => {
     event.preventDefault();
@@ -94,6 +96,7 @@ function Form() {
         setMail("");
         setMessaggio("");
         setStatus("ok");
+        setPrivacy(false);
       } else {
         setStatus("error");
         setError(`${res.status} ${res.statusText}`);
@@ -166,6 +169,21 @@ function Form() {
           id="yourmessage"
           required
         ></textarea>
+      </p>
+      <p className={style.privacy}>
+        <label htmlFor="privacy" className={style.privacy__label}>
+          Accetto i termini sulla&nbsp;
+          <a href={t.privacy_url} target="_blank">
+            {t.privacy}
+          </a>
+        </label>
+        <input
+          onChange={(e) => setPrivacy(e.target.checked)}
+          id="privacy"
+          type="checkbox"
+          name="privacy"
+          required
+        />
       </p>
       <div style={{ height: "20px" }}>
         {errorNome && <p className={style.error}>{errorNome}</p>}

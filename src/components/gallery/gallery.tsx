@@ -104,6 +104,21 @@ function Gallery({ type, images }: { type: string; images: string[] }) {
             />
           </button>
         </div>
+        <div className={style.galleryGrid__col}>
+          <button
+            onClick={() => {
+              setModalState(true);
+              setCurrentImage(6);
+            }}
+          >
+            <ExportedImage
+              src={"/image/" + images[6]}
+              width={450}
+              height={225}
+              alt="gallery"
+            />
+          </button>
+        </div>
       </div>
     );
   }

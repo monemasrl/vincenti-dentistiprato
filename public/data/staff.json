@@ -4,16 +4,10 @@
             "nome": "Dott. Alessandro Vincenti",
             "ruolo": "Odontoiatra",
             "image": "dott_alessandro_vincenti-300x230.jpg",
-            "descrizione": "Laurea Università Cattolica Roma, Odontoiatria conservativa ed estetica, Endodonzia, Protesi"
+            "descrizione": "Laurea Università Cattolica Roma, Odontoiatria conservativa ed estetica, Protesi, Implantologia"
         },
         {
-            "nome": "Dott. Sergio Bonato",
-            "ruolo": "Medico Chirurgo Odontoiatra",
-            "image": "dott_sergio_bonato-300x230.jpg",
-            "descrizione": "Laurea Università di Firenze, Chirugia Orale, Implantologia, Parodontologia"
-        },
-        {
-            "nome": "Dott. Sara Piluso",
+            "nome": "Dott.ssa Sara Piluso",
             "ruolo": "Odontoiatra",
             "image": "dott_ssa_sara_piluso-300x230-1-300x230.jpg",
             "descrizione": "Laurea Università di Firenze, Ortodonzia ed odontoiatria pediatrica"
@@ -25,14 +19,24 @@
             "descrizione": "Laurea Università di Firenze, Gnatologo"
         },
         {
+            "nome": "dott.ssa Gaia Sarchielli",
+            "ruolo": "Igienista dentale",
+            "image": "sarchielli.jpg"
+        },
+        {
+            "nome": "Dott.ssa Madalina Hritcu",
+            "ruolo": "Igienista dentale",
+            "image": "hritcu.jpg"
+        },
+        {
             "nome": "Martina Guazzini",
             "ruolo": "Assistente alla poltrona",
             "image": "sig_guazzini_martina-300x230.jpg"
         },
         {
-            "nome": "Caterina Bogani",
+            "nome": "Elena Panzani",
             "ruolo": "Assistente alla poltrona",
-            "image": "sig_bogani_caterina-300x230.jpg"
+            "image": "panzani.jpg"
         }
     ]
 }

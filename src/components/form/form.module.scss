@@ -26,6 +26,20 @@ form.form {
   margin: 2rem 0;
   color: black;
   display: inline-block;
+  .privacy {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    label {
+      display: inherit;
+      a {
+        color: black;
+      }
+    }
+    input {
+      width: auto;
+    }
+  }
   p {
     text-align: left;
   }

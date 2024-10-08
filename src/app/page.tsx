@@ -131,7 +131,7 @@ export default async function Home({
       </AnimatedSection>
       <AnimatedSection classname={styles.section7}>
         <ExportedImage
-          src={"/image/foto-team-dott-vincenti.jpg"}
+          src={"/image/team.jpg"}
           width={1459}
           height={595}
           alt="foto-team"
