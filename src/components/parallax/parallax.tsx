@@ -48,7 +48,7 @@ function Parallax({
       ref={paralRef}
     >
       <motion.div
-        style={{ y: landscape ? "0px" : parallax }}
+        style={{ y: parallax }}
         className={"parallaxContainer__parallax__img"}
       >
         <ExportedImage

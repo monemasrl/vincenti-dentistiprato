@@ -2,13 +2,7 @@ function Page() {
   return (
     <>
       <div className="privacyPage">
-        <h1 className="privacy-policy-h1">
-          Privacy Policy
-          <br />
-          <span>Last Updated On 08-Oct-2024</span>
-          <br />
-          <span>Effective Date 08-Oct-2024</span>
-        </h1>
+        <h1 className="privacy-policy-h1">Privacy Policy</h1>
 
         <p className="privacy-policy-p">
           La presente Privacy Policy descrive le politiche di Dentistiprato, Via
@@ -88,7 +82,7 @@ function Page() {
           </li>
 
           <li>
-            <h2 className="privacy-policy-h2">Security:</h2>
+            <h2 className="privacy-policy-h2">Sicurezza:</h2>
             <p className="privacy-policy-p">
               La sicurezza delle tue informazioni è importante per noi e lo
               faremo utilizzare ragionevoli misure di sicurezza per prevenire la
