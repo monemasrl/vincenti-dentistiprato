@@ -101,7 +101,9 @@
     height: 70vh;
   }
   .parallaxContainer__parallax__testo_div {
-    font-size: 1.5rem;
+    @media #{$phone} {
+      font-size: 1.5rem;
+    }
   }
 
   img {

@@ -70,49 +70,49 @@ function NavBar() {
         <div
           className={`${style.mainNavBar__navBlock} ${style.mainNavBar__inner}`}
         >
-          <ul className={style.mainNavBar__navBlock__nav}>
-            {t.map(
-              (
-                item: {
-                  name?: string;
-                  url?: string;
-                  sub?: { name: string; url: string }[];
-                },
-                index
-              ) => (
-                <li
-                  className={`${
-                    pathN.includes(item.url || "") && style.activeLink
-                  }`}
-                  key={index}
-                >
-                  <a
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scroll?.scrollTo(item.url || "", { offset: -100 });
-                    }}
-                    href={item.url || ""}
+          {isHome() && (
+            <ul className={style.mainNavBar__navBlock__nav}>
+              {t.map(
+                (
+                  item: {
+                    name?: string;
+                    url?: string;
+                    sub?: { name: string; url: string }[];
+                  },
+                  index
+                ) => (
+                  <li
+                    className={`${
+                      pathN.includes(item.url || "") && style.activeLink
+                    }`}
+                    key={index}
                   >
-                    {item.name}
-                  </a>
-                  {item.sub && (
-                    <ul className={style.subNav}>
-                      {item.sub?.map((subItem, index) => (
-                        <li key={index}>
-                          <Link href={subItem.url || ""}>{subItem.name}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              )
-            )}
-          </ul>
+                    <a
+                      onClick={(e) => {
+                        e.preventDefault();
+                        scroll?.scrollTo(item.url || "", { offset: -100 });
+                      }}
+                      href={item.url || ""}
+                    >
+                      {item.name}
+                    </a>
+                    {item.sub && (
+                      <ul className={style.subNav}>
+                        {item.sub?.map((subItem, index) => (
+                          <li key={index}>
+                            <Link href={subItem.url || ""}>{subItem.name}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                )
+              )}
+            </ul>
+          )}
         </div>
         <div
-          className={`${style.burger} ${
-            isHome() ? style.burger__home : style.burger__inner
-          }`}
+          className={`${style.burger} ${isHome() ? style.burger__home : ""}`}
           onClick={() => setMobile(true)}
         >
           <RxHamburgerMenu />
@@ -142,27 +142,29 @@ function NavBar() {
                 />
               </a>
 
-              <ul className={style.navMobile__nav}>
-                {t.map((item, index) => (
-                  <li
-                    className={`${
-                      pathN.includes(item.url || "") && style.activeLink
-                    }`}
-                    key={index}
-                  >
-                    <a
-                      onClick={(e) => {
-                        e.preventDefault();
-                        scroll?.scrollTo(item.url || "", { offset: -100 });
-                        setMobile(false);
-                      }}
-                      href={item.url || ""}
+              {isHome() && (
+                <ul className={style.navMobile__nav}>
+                  {t.map((item, index) => (
+                    <li
+                      className={`${
+                        pathN.includes(item.url || "") && style.activeLink
+                      }`}
+                      key={index}
                     >
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+                      <a
+                        onClick={(e) => {
+                          e.preventDefault();
+                          scroll?.scrollTo(item.url || "", { offset: -100 });
+                          setMobile(false);
+                        }}
+                        href={item.url || ""}
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
               <hr style={{ width: "50%" }} />
               <div className={style.navMobile__generic}>
                 Via della Stazione 27, Barga - 0583 711372 - info@vtservices.it
