@@ -68,7 +68,7 @@ export default async function Home() {
               <div
                 key={index}
                 className={`${styles.trattamenti__box} ${
-                  styles["trattamenti__" + index.toString()]
+                  styles["trattamenti__" + index.toString()] || ""
                 } `}
               >
                 <div className={styles.trattamenti__box__imageBox}>
