@@ -18,9 +18,7 @@ function Map({ position, zoom }: { position: LatLngExpression; zoom: number }) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={position}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
+        <Popup>Studio dentistico dott. Vincenti</Popup>
       </Marker>
       <SetViewOnClick coords={position} />
     </MapContainer>
