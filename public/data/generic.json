@@ -8,9 +8,9 @@
         "label_powered": "Powered by",
         "powered": "https://monema.it",
         "footer_credit": "© 2016 Studio dentistico dott. Vincenti",
-        "city": " Prato",
+        "city": "Prato",
         "address": "Via Torelli",
-        "address_number": " 57"
+        "address_number": "57"
     },
     "FormContatti": {
         "nome": "Nome",

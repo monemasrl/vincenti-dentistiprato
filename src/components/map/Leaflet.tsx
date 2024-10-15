@@ -36,8 +36,9 @@ function LeafletMain({ address }: { address: Taddress | null }) {
       const streetsplit = street?.split(" ");
       const address = streetsplit?.join("+");
       const citySplit = city?.split(" ");
-      const cityAddress = citySplit?.join("+");
+      const cityAddress = citySplit.length > 1 ? citySplit?.join("+") : city;
       const addressString = `${address}+${numero}+${cityAddress}`;
+      console.log(citySplit, "citySplit");
       return addressString;
     } else {
       return null;
@@ -48,10 +49,10 @@ function LeafletMain({ address }: { address: Taddress | null }) {
     async function fetchData(address: Taddress) {
       const addressComposed = createAddress(
         address.street,
-        address.number || "",
-        address.city
+        address.city,
+        address.number || ""
       );
-
+      console.log(addressComposed, "addressComposed");
       const data: any =
         addressComposed && (await fetchMapData(addressComposed));
 
@@ -69,10 +70,7 @@ function LeafletMain({ address }: { address: Taddress | null }) {
   return (
     <div className={style.mappa}>
       {mapdata.length > 0 ? (
-        <Mappa
-          position={[parseFloat(mapdata[0].lat), parseFloat(mapdata[0].lon)]}
-          zoom={13}
-        />
+        <Mappa position={[43.87236, 11.10069]} zoom={13} />
       ) : (
         <div
           style={{ height: "100%", textAlign: "center", paddingTop: "2rem" }}
