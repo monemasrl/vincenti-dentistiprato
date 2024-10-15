@@ -30,7 +30,10 @@ function Footer() {
           </li>
           <li>{t.generics.albo}</li>
           <li>
-            {t.generics.label_powered}:{t.generics.powered}
+            {t.generics.label_powered}: &nbsp;
+            <a target="_blank" href={t.generics.powered}>
+              Monema.it
+            </a>
           </li>
         </ul>
         <p>{t.generics.footer_credit}</p>
