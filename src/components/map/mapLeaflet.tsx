@@ -18,7 +18,10 @@ function Map({ position, zoom }: { position: LatLngExpression; zoom: number }) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={position}>
-        <Popup>Studio dentistico dott. Vincenti</Popup>
+        <Popup>
+          Studio dentistico dott. Vincenti
+          <br /> via Torelli 57, 59100 Prato
+        </Popup>
       </Marker>
       <SetViewOnClick coords={position} />
     </MapContainer>
