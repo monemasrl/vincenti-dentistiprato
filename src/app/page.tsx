@@ -40,28 +40,19 @@ export default async function Home() {
         />
       </section>
       <AnimatedSection classname={styles.section2} scrollToMe="studio">
-        <div className="subtitle">studio dentistico dott. vincenti</div>
-        <h1 className="title">lo studio dentistico</h1>
-        <p>
-          Lo studio dentistico Dott. Vincenti, situato a Prato, si avvale di uno
-          staff di professionisti qualificati e di attrezzature <br /> moderne
-          per la prevenzione e la cura delle malattie della bocca e per le
-          riabilitazioni su impianti.
-        </p>
+        <div className="subtitle">{homeData["it"].sezione1.subtitle}</div>
+        <h1 className="title">{homeData["it"].sezione1.title}</h1>
+        <p
+          dangerouslySetInnerHTML={{ __html: homeData["it"].sezione1.testo }}
+        />
       </AnimatedSection>
       <AnimatedSection classname={styles.section3}>
         <Gallery type="one" images={HomeDataLang.gallery1} />
       </AnimatedSection>
       <AnimatedSection classname={styles.section4} scrollToMe="trattamenti">
-        <div className="subtitle">
-          I migliori specialisti per risolvere ogni vostro problema
-        </div>
-        <h2 className="title">I trattamenti</h2>
-        <p>
-          Mettiamo a disposizione dei pazienti, sia bambini che adulti, la
-          nostra preparazione e professionalità per risolvere ogni tipo di
-          esigenza.
-        </p>
+        <div className="subtitle">{homeData["it"].sezione2.subtitle}</div>
+        <h2 className="title">{homeData["it"].sezione2.title}</h2>
+        <p>{homeData["it"].sezione2.testo}</p>
         <div className={styles.trattamenti}>
           {HomeDataLang.trattamenti.map((item, index) => {
             return (
@@ -91,17 +82,13 @@ export default async function Home() {
           className={"parallaxSection5"}
           imageURL="/image/dr_vincenti_center_band-1.jpg"
           alt="parallax"
-          text="PER PRENDERSI CURA DI VOI<br /><span>con serietà e cortesia</span>"
+          text={homeData["it"].parallax}
         />
       </AnimatedSection>
       <AnimatedSection classname={styles.section6} scrollToMe="team">
-        <div className="subtitle">Un team di professionisti qualificati</div>
-        <h2 className="title">Il nostro team</h2>
-        <p>
-          Un gruppo stabile di professionisti sempre aggiornati che lavora
-          insieme da anni si prende cura di ogni vostra esigenza e necessità con
-          serietà e cortesia.
-        </p>
+        <div className="subtitle">{homeData["it"].sezione3.subtitle}</div>
+        <h2 className="title">{homeData["it"].sezione3.title}</h2>
+        <p>{homeData["it"].sezione3.testo}</p>
         <div className={styles.staff}>
           {StaffDataLang.map((item, index) => {
             return (
@@ -141,21 +128,11 @@ export default async function Home() {
         width="1200px"
         scrollToMe="strumentazione"
       >
-        <div className="subtitle">
-          Attrezzature all’avanguardia per la tua sicurezza
-        </div>
-        <h2 className="title">Strumentazione e sicurezza</h2>
-        <p>
-          Lo studio è dotato di attrezzature moderne ed all’avanguardia,
-          controllate da specialisti che,
-          <br />
-          nel rispetto delle normative vigenti, ne certificano periodicamente il
-          corretto funzionamento.
-          <br /> Le procedure di sterilizzazione prevedono l’utilizzo di moderne
-          autoclavi di classe B (ad elevata efficacia)
-          <br />
-          con controllo e tracciabilità di tutto lo strumentario utilizzato.
-        </p>
+        <div className="subtitle">{homeData["it"].sezione4.subtitle}</div>
+        <h2 className="title">{homeData["it"].sezione4.title}</h2>
+        <p
+          dangerouslySetInnerHTML={{ __html: homeData["it"].sezione4.testo }}
+        />
         <div className={styles.strumentazioneGallery}>
           <Gallery type="two" images={HomeDataLang.gallery2} />
         </div>
@@ -171,56 +148,49 @@ export default async function Home() {
         />
       </AnimatedSection>
       <AnimatedSection classname={styles.section10} scrollToMe="contatti">
-        <div className="subtitle">Non solo puntualità</div>
-        <h1 className="title">Contatti e orari</h1>
-        <p>
-          Le terapie richiedono tempi adeguati per poter essere effettuate con
-          qualità e precisione, oltre che con la dovuta calma.
-          <br />
-          Per questo gestiamo gli appuntamenti in modo da dedicare tutto il
-          tempo necessario al tipo di seduta prevista,
-          <br />
-          garantendo massima concentrazione e tranquillità.
-        </p>
+        <div className="subtitle">{homeData["it"].sezione5.subtitle}</div>
+        <h1 className="title">{homeData["it"].sezione5.title}</h1>
+        <p
+          dangerouslySetInnerHTML={{ __html: homeData["it"].sezione5.testo }}
+        />
         <div className={styles.contatti}>
           <div className={styles.contatti__box}>
             <ExportedImage
-              src={"/image/icon-time-150x150.png"}
+              src={homeData["it"].contatti[0].img}
               width={150}
               height={150}
               alt="icon time"
             />
-            <h3>Orari di apertura</h3>
-            <p>Lunedì/Giovedì: 9.00 - 13.00 / 15.00 - 20.00</p>
+            <h3>{homeData["it"].contatti[0].titolo}</h3>
+            <p>{homeData["it"].contatti[0].testo1}</p>
             <hr />
-            <p> Venerdì: 9.00 - 13.00</p>
+            <p> {homeData["it"].contatti[0].testo2}</p>
           </div>
           <div className={styles.contatti__box}>
             <ExportedImage
-              src={"/image/icon-medical-150x150.png"}
+              src={homeData["it"].contatti[1].img}
               width={150}
               height={150}
               alt="icon time"
             />
-            <h3>emergenze</h3>
+            <h3>{homeData["it"].contatti[1].titolo}</h3>
             <p>
-              Per ogni esigenza al di fuori degli orari di apertura dello studio
-              è possibile contattare il seguente numero:
-              <span>346.7976813</span>
+              {homeData["it"].contatti[1].testo1}
+              <span>{homeData["it"].contatti[1].testo2}</span>
             </p>
           </div>
 
           <div className={styles.contatti__box}>
             <ExportedImage
-              src={"/image/icon-telephone-150x150.png"}
+              src={homeData["it"].contatti[2].img}
               width={150}
               height={150}
               alt="icon time"
             />
-            <h3>Appuntamenti</h3>
+            <h3>{homeData["it"].contatti[2].titolo}</h3>
             <p>
-              È possibile prenotare una visita chiamando il numero:
-              <span>0574.514380</span>
+              {homeData["it"].contatti[2].testo1}
+              <span>{homeData["it"].contatti[2].testo2}</span>
             </p>
           </div>
         </div>

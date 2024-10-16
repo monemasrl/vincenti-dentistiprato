@@ -1,6 +1,32 @@
 {
     "it": {
         "titolo": "Studio dentistico dott. Vincenti",
+        "sezione1": {
+            "subtitle": "studio dentistico dott. vincenti",
+            "title": "lo studio dentistico",
+            "testo": "Lo studio da più di 20 anni si prende cura del sorriso dei nostri pazienti grazie ad <br/>uno staff di professionisti altamente qualificati e di tecnologie sempre aggiornate.  <br/>Un team sempre disponibile ad ascoltare e soddisfare ogni vostra esigenza."
+        },
+        "sezione2": {
+            "subtitle": "I migliori specialisti per risolvere ogni vostro problema",
+            "title": "I trattamenti",
+            "testo": "Mettiamo a disposizione dei pazienti, sia bambini che adulti, la nostra preparazione e professionalità per risolvere ogni tipo di esigenza."
+        },
+        "sezione3": {
+            "subtitle": "Un team di professionisti qualificati",
+            "title": "Il nostro team",
+            "testo": "Un gruppo stabile di professionisti sempre aggiornati che lavora insieme da anni si prende cura di ogni vostra esigenza e necessità con serietà e cortesia."
+        },
+        "sezione4": {
+            "subtitle": "Attrezzature all’avanguardia per la tua sicurezza",
+            "title": "Strumentazione e sicurezza",
+            "testo": "Lo studio è dotato di attrezzature moderne ed all’avanguardia, controllate da specialisti che, <br /> nel rispetto delle normative vigenti, ne certificano periodicamente il corretto funzionamento. <br /> Le procedure di sterilizzazione prevedono l’utilizzo di moderne autoclavi di classe B (ad elevata efficacia) <br />con controllo e tracciabilità di tutto lo strumentario utilizzato."
+        },
+        "sezione5": {
+            "subtitle": "Non solo puntualità",
+            "title": "Contatti e orari",
+            "testo": "Le terapie richiedono tempi adeguati per poter essere effettuate con qualità e precisione, oltre che con la dovuta calma.<br /> Per questo gestiamo gli appuntamenti in modo da dedicare tutto il tempo necessario al tipo di seduta prevista, <br /> garantendo massima concentrazione e tranquillità."
+        },
+        "parallax": "PER PRENDERSI CURA DI VOI<br /><span>con serietà e cortesia</span>",
         "trattamenti": [
             {
                 "titolo": "Odontoiatria pediatrica                ",
@@ -71,6 +97,26 @@
                 "img": "dentista-icon-gnatologia.png",
                 "img-width": 70,
                 "img-height": 60
+            }
+        ],
+        "contatti": [
+            {
+                "titolo": "Orari di apertura",
+                "img": "/image/icon-time-150x150.png",
+                "testo1": "Lunedì/Giovedì: 9.00 - 13.00 / 15.00 - 20.00",
+                "testo2": "Venerdì: 9.00 - 13.00"
+            },
+            {
+                "titolo": "emergenze",
+                "img": "/image/icon-medical-150x150.png",
+                "testo1": "Per ogni esigenza al di fuori degli orari di apertura dello studio è possibile contattare il seguente numero:",
+                "testo2": "346.7976813"
+            },
+            {
+                "titolo": "Appuntamenti",
+                "img": "/image/icon-telephone-150x150.png",
+                "testo1": "È possibile prenotare una visita chiamando il numero:",
+                "testo2": "0574.514380"
             }
         ],
         "gallery1": [
