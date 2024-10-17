@@ -52,7 +52,9 @@ export default async function Home() {
       <AnimatedSection classname={styles.section4} scrollToMe="trattamenti">
         <div className="subtitle">{homeData["it"].sezione2.subtitle}</div>
         <h2 className="title">{homeData["it"].sezione2.title}</h2>
-        <p>{homeData["it"].sezione2.testo}</p>
+        <p
+          dangerouslySetInnerHTML={{ __html: homeData["it"].sezione2.testo }}
+        />
         <div className={styles.trattamenti}>
           {HomeDataLang.trattamenti.map((item, index) => {
             return (

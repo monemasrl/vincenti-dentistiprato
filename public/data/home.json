@@ -9,7 +9,7 @@
         "sezione2": {
             "subtitle": "Il paziente sempre al centro delle nostre attenzioni",
             "title": "I trattamenti",
-            "testo": "Il nostro Team si prende cura sia dei bambini che degli adulti con competenza e professionalità in ogni ambito terapeutico."
+            "testo": "Il nostro Team si prende cura sia dei bambini che degli adulti con competenza e <br/>professionalità in ogni ambito terapeutico."
         },
         "sezione3": {
             "subtitle": "Un team di professionisti qualificati",
@@ -17,9 +17,9 @@
             "testo": "Un gruppo stabile di professionisti sempre aggiornati che lavora insieme da anni si prende cura di ogni vostra esigenza e necessità con serietà e cortesia."
         },
         "sezione4": {
-            "subtitle": "Attrezzature all’avanguardia per la tua sicurezza",
-            "title": "Strumentazione e sicurezza",
-            "testo": "Lo studio è dotato di attrezzature moderne ed all’avanguardia, controllate da specialisti che, <br /> nel rispetto delle normative vigenti, ne certificano periodicamente il corretto funzionamento. <br /> Le procedure di sterilizzazione prevedono l’utilizzo di moderne autoclavi di classe B (ad elevata efficacia) <br />con controllo e tracciabilità di tutto lo strumentario utilizzato."
+            "subtitle": "Attrezzature all’avanguardia per vostra sicurezza",
+            "title": "Sterilizzazione ed igiene",
+            "testo": "Il mantenimento di elevati standard di sicurezza in materia di igiene è una tra le nostre principali priorità.<br/> Rispettiamo rigidi protocolli di sterilizzazione utilizzando autoclavi classe B di tipo ospedaliero con controllo <br/> e tracciabilità dello strumentario   utilizzato, di decontaminazione delle superfici e <br/> sanificazione degli ambienti dopo ogni seduta."
         },
         "sezione5": {
             "subtitle": "Non solo puntualità",
