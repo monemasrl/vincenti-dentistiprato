@@ -4,7 +4,7 @@
         "sezione1": {
             "subtitle": "studio dentistico dott. vincenti",
             "title": "lo studio dentistico",
-            "testo": "Lo studio da più di 20 anni si prende cura del sorriso dei nostri pazienti grazie ad <br/>uno staff di professionisti altamente qualificati ed a tecnologie costantemente aggiornate.  <br/>Un team sempre disponibile ad ascoltare e soddisfare ogni vostra esigenza."
+            "testo": "Lo studio da più di 20 anni si prende cura del sorriso dei suoi pazienti grazie ad <br/>uno staff di professionisti altamente qualificati ed a tecnologie costantemente aggiornate.  <br/>Un team sempre disponibile ad ascoltare e soddisfare ogni vostra esigenza."
         },
         "sezione2": {
             "subtitle": "Il paziente sempre al centro delle nostre attenzioni",
@@ -14,10 +14,10 @@
         "sezione3": {
             "subtitle": "Un team di professionisti qualificati",
             "title": "Il nostro team",
-            "testo": "Un gruppo stabile di professionisti sempre aggiornati che lavora insieme da anni si prende cura di ogni vostra esigenza e necessità con serietà e cortesia."
+            "testo": "Un gruppo stabile di professionisti sempre aggiornati che lavorano insieme da anni e che si prendono cura di ogni vostra esigenza e necessità con serietà e cortesia."
         },
         "sezione4": {
-            "subtitle": "Attrezzature all’avanguardia per vostra sicurezza",
+            "subtitle": "Attrezzature all’avanguardia per la vostra sicurezza",
             "title": "Sterilizzazione ed igiene",
             "testo": "Il mantenimento di elevati standard di sicurezza in materia di igiene è una tra le nostre principali priorità.<br/> Rispettiamo rigidi protocolli di sterilizzazione utilizzando autoclavi classe B di tipo ospedaliero con controllo <br/> e tracciabilità dello strumentario   utilizzato, di decontaminazione delle superfici e <br/> sanificazione degli ambienti dopo ogni seduta."
         },
@@ -44,7 +44,7 @@
             },
             {
                 "titolo": "Odontoiatria conservativa",
-                "descrizione": "La terapia della carie, effettuata con l’utilizzo della diga, mezzi ingrandenti scegliendo sempre i materiali migliori.",
+                "descrizione": "La terapia della carie, effettuata con l’utilizzo della diga e del microscopio scegliendo sempre i materiali migliori.",
                 "img": "dentista-icon-trapano.png",
                 "img-width": 65,
                 "img-height": 66
@@ -58,14 +58,14 @@
             },
             {
                 "titolo": "Prevenzione e igiene",
-                "descrizione": "L’igiene dentale viene effettuata sempre con apparecchiature moderne ed altamente efficienti per garantire il massimo confort ed i migliori risultati. Utilizziamo la tecnica GBT per il trattamento delle problematiche gengivali superficiali e profonde in associazione, dove indicato, con le tecniche pardontali tradizionali e la terapia con Laser.",
+                "descrizione": "L’igiene dentale viene effettuata sempre con apparecchiature moderne ed altamente efficienti per garantire il massimo confort ed i migliori risultati. Utilizziamo la tecnica GBT per il trattamento delle problematiche gengivali superficiali e profonde in associazione, dove indicato, con le tecniche parodontali tradizionali e la terapia con Laser.",
                 "img": "dentista-icon-mela.png",
                 "img-width": 48,
                 "img-height": 70
             },
             {
                 "titolo": "Endodonzia",
-                "descrizione": "La terapia canalare, rigorosamente praticata con la diga di gomma e gli ingrandimenti, secondo le tecniche moderne che prevedono l’utilizzo di strumenti in Nichel - Titanio, per ottenere risultati sempre più predicibili e durevoli.",
+                "descrizione": "La terapia canalare, rigorosamente praticata con la diga di gomma e gli ingrandimenti, secondo le tecniche moderne che prevedono l’utilizzo di strumenti in Nichel - Titanio, per ottenere risultati sempre più affidabili e duraturi.",
                 "img": "dentista-icson-dente2.png",
                 "img-width": 70,
                 "img-height": 50
@@ -86,7 +86,7 @@
             },
             {
                 "titolo": "Odontoiatria estetica",
-                "descrizione": "Un bel sorriso è determinato da molteplici fattori e tra questi avere denti sani e belli è certamente un elemento molto importante. Tornare a sorridere spensieratamente è possibile grazie all’affinamento di tecniche e materiali di elevata precisione, qualità e durata. L’integrazione con le tecniche digitali consente di poter visualizzare in anteprima i risultati estetici <strong>(smile design)</strong> per ottenere risultati predicibili e soddisfacenti. Il lavoro di equipe con laboratori odontotecnici altamente competenti e specializzati concorre nell’ottenimento dei migliori risultati.",
+                "descrizione": "Un bel sorriso è determinato da molteplici fattori e tra questi avere denti sani e belli è certamente un elemento molto importante. Tornare a sorridere spensieratamente è possibile grazie all’affinamento di tecniche e materiali di elevata precisione, qualità e durata. L’integrazione con le tecniche digitali consente di poter visualizzare in anteprima i risultati estetici <strong>(smile design)</strong> per ottenere risultati prevedibili e soddisfacenti. Il lavoro di equipe con laboratori odontotecnici altamente competenti e specializzati concorre al raggiungimento dei migliori risultati.",
                 "img": "dentista-icon-diamante.png",
                 "img-width": 58,
                 "img-height": 48
