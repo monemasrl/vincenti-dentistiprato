@@ -97,6 +97,9 @@
       }
       ul li a {
         color: $blue;
+        &:hover {
+          color: $blue;
+        }
       }
       .mainNavBar__navBlock__topData {
         color: $navyBlue;
