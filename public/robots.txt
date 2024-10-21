@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dottvincenti.dentistiprato.com/
+
+# Sitemaps
+Sitemap: https://dottvincenti.dentistiprato.com/sitemap.xml
