@@ -102,8 +102,8 @@ export default async function Home() {
               >
                 <ExportedImage
                   src={"/image/" + item.image}
-                  width={300}
-                  height={230}
+                  width={600}
+                  height={460}
                   alt={item.nome}
                 />
 

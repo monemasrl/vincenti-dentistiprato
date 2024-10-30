@@ -3,19 +3,19 @@
         {
             "nome": "Dott. Alessandro Vincenti",
             "ruolo": "Odontoiatra",
-            "image": "dott_alessandro_vincenti-300x230.jpg",
+            "image": "vincenti.jpg",
             "descrizione": "Laurea Università Cattolica Roma, Odontoiatria conservativa ed estetica, Protesi, Implantologia"
         },
         {
             "nome": "Dott.ssa Sara Piluso",
             "ruolo": "Odontoiatra",
-            "image": "dott_ssa_sara_piluso-300x230-1-300x230.jpg",
+            "image": "piluso.jpg",
             "descrizione": "Laurea Università di Firenze, ortodonzia tradizionale ed invisibile, odontoiatria pediatrica"
         },
         {
             "nome": "Dott. Filippo Paoletti",
             "ruolo": "Odontoiatra",
-            "image": "dott_filippo_paoletti-300x230.jpg",
+            "image": "paoletti.jpg",
             "descrizione": "Laurea Università di Firenze, Gnatologia, conservativa ed ortodonzia invisibile"
         },
         {
@@ -31,7 +31,7 @@
         {
             "nome": "Martina Guazzini",
             "ruolo": "Assistente alla poltrona",
-            "image": "sig_guazzini_martina-300x230.jpg"
+            "image": "guazzini.jpg"
         },
         {
             "nome": "Elena Panzani",
