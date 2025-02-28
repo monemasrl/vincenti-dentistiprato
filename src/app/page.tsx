@@ -1,15 +1,15 @@
+"use client";
 import heroData from "../../public/data/hero.json";
 import homeData from "../../public/data/home.json";
 import staffData from "../../public/data/staff.json";
 import generic from "../../public/data/generic.json";
-
 import AnimatedSection from "@/components/mainLayoutComponents/sections/animatedSection";
 import LeafletMain from "@/components/map/Leaflet";
 import Form from "@/components/form/netlifyForm";
 import Parallax from "@/components/parallax/parallax";
 import Gallery from "@/components/gallery/gallery";
 import ExportedImage from "next-image-export-optimizer";
-
+import GoogleAnalytics from "@/components/cookieConsent/googleAnalytics";
 import styles from "./page.module.scss";
 
 /**
@@ -19,14 +19,14 @@ import styles from "./page.module.scss";
  * Passare i dati ai componenti figli tramite props, sui componenti annidati è possibile refetchare i dati in quando sono cacheati da next
  */
 
-export default async function Home() {
+export default function Home() {
   const HeroDataLang = heroData["it"];
   const HomeDataLang = homeData["it"];
   const StaffDataLang = staffData["it"];
   const mapData = generic.generics;
   const HeroImage =
     "/image/studio-dentistico-dottor-vincenzi-slideshow_overlay-25.jpg";
-
+  console.log(process.env.GA_MEASUREMENT_ID, "test");
   return (
     <main className={styles.main}>
       <section className={styles.section1}>

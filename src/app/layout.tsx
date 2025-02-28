@@ -32,15 +32,15 @@ export default async function RootLayout({
         <JsonldMetaData metadata={meta} />
         <link rel="icon" href="/image/favicon.ico" />
       </head>
-      {process.env.GA_MEASUREMENT_ID && (
-        <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
-      )}
+
       <body className={inter.variable}>
-        <CookieConsentBanner />
         <Nav />
         <SmoothScrolling>{children}</SmoothScrolling>
         <Footer />
         <ScrollTop />
+        {process.env.GA_MEASUREMENT_ID && (
+          <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
+        )}
       </body>
     </html>
   );

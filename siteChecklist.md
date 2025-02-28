@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Checklist sviluppo website
 
 Checklist con fondamentali per messa online
@@ -23,6 +22,3 @@ Checklist con fondamentali per messa online
 - [x] Controllo mail invio form
 - [x] Sitemap
 - [x] Robots.txt
-=======
-1. [ ] test
->>>>>>> main

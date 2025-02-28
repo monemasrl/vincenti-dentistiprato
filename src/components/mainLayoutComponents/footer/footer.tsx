@@ -4,6 +4,7 @@ import style from "./footer.module.scss";
 import generic from "../../../../public/data/generic.json";
 import { usePathname } from "next/navigation";
 import ExportedImage from "next-image-export-optimizer";
+import CookieConsentBanner from "@/components/cookieConsent/cookieConsent";
 
 function Footer() {
   const pathN = usePathname();
@@ -38,6 +39,7 @@ function Footer() {
         </ul>
         <p>{t.generics.footer_credit}</p>
       </div>
+      <CookieConsentBanner />
     </footer>
   );
 }
