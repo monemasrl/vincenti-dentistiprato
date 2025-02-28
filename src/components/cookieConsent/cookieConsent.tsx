@@ -10,9 +10,17 @@ const CookieConsentBanner = () => {
 
   useEffect(() => {
     const consentCookie = cookie.get("cookieConsent");
-
     if (!consentCookie || consentCookie === "rejected") {
       setShowBanner(true);
+      Boolean(window.gtag) &&
+        window.gtag("consent", "default", {
+          analytics_storage: "denied",
+        });
+    } else if (consentCookie === "accepted") {
+      Boolean(window.gtag) &&
+        window.gtag("consent", "default", {
+          analytics_storage: "granted",
+        });
     }
   }, []);
 
@@ -24,7 +32,6 @@ const CookieConsentBanner = () => {
   const handleReject = () => {
     setShowBanner(false);
     cookie.set("cookieConsent", "rejected");
-    push("https://google.com");
   };
 
   if (!showBanner) {
